@@ -16,9 +16,5 @@ namespace MBAPI_TestApp.Controllers
             var data = new DataAccess();
             return data.CustomerSearch(query.searchString);
         }
-
-
-
-
     }
 }

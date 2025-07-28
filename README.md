@@ -20,3 +20,10 @@ designed.
 In the simplest scenario, simply fork this project and then replace the code in the Services/DataAccess.cs with
 logic that connects to your data. 
 
+## Configuration
+
+
+
+## More information
+
+See documentation here: https://public.3.basecamp.com/p/uwfsCpMLLD3RnXqFFKKCsH
