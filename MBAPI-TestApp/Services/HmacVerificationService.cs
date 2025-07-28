@@ -11,11 +11,19 @@ namespace MBAPI_TestApp.Services
         public HmacVerificationService(RequestDelegate next, IConfiguration config)
         {
             _next = next;
-            _sharedSecret = config["Hmac:SharedSecret"] ?? "48390483029"; 
+            _sharedSecret = config["Settings:SharedSecret"] ?? ""; 
         }
 
         public async Task Invoke(HttpContext context)
         {
+            // Bypass HMAC check for root status page
+            var path = context.Request.Path.Value?.ToLower();
+            if (path == "/")
+            {
+                await _next(context);
+                return;
+            }
+
             context.Request.EnableBuffering(); 
             var body = await new StreamReader(context.Request.Body).ReadToEndAsync();
             context.Request.Body.Position = 0;
