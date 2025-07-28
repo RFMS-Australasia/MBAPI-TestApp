@@ -8,7 +8,7 @@ namespace MBAPI_TestApp.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class BoostApiReceiver : ControllerBase
+    public class BoostProviderApi : ControllerBase
     {
         [HttpPost("customer/search")]
         public List<Customer> CustomerSearch(CustomerQuery query)

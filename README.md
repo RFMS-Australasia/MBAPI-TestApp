@@ -20,9 +20,23 @@ designed.
 In the simplest scenario, simply fork this project and then replace the code in the Services/DataAccess.cs with
 logic that connects to your data. 
 
-## Configuration
+## Deployment
 
+- Deploy to Azure as an App Service
+- Once deployed, go to Environment variables:
+	- Add a new App Setting
+	- Name should be "Settings:SharedSecret"
+	- Value should be the shared secret provided by RFMS Australasia
 
+## Verification
+
+HMAC verification is optional. To disable this feature, modify Program.cs and remove this line:
+
+```app.UseMiddleware<HmacVerificationService>();```
+
+## Testing
+
+A simple test library is included in this solution. It allows you to run and test your code locally prior to deployment.
 
 ## More information
 
