@@ -361,5 +361,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/MBAPI-TestApp/MBAPI-TestApp.csproj
 /MBAPI-TestApp/appsettings.Development.json
