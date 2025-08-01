@@ -4,6 +4,7 @@
     {
         public int Id { get; set; }
         public string Source { get; set; } = "Customer";
+        public string JobNumber { get; set; } = "";
 
         public Address SoldTo { get; set; } = new Address();
         public Address ShipTo { get; set; } = new Address();
