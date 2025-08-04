@@ -1,0 +1,129 @@
+﻿[
+  {
+    "Id": "PRD-0001",
+    "ProductType": "RollCarpet",
+    "Notes": "US Measurements, CutGapMethod: Gullotine, Extra waste: 10%",
+    "MeasurementsAreInches": true,
+    "StyleName": "Venetian Wonders",
+    "StyleNumber": "VP-2024-001",
+    "Supplier": "Premium Floor Coverings Inc.",
+    "LabelWidthMeasurement": 144.0,
+    "UsableWidthMeasurement": 144.0,
+    "PatternWidthMeasurement": 12.0,
+    "PatternLengthMeasurement": 12.0,
+    "PatternDropPercent": 0,
+    "MaximumTSeams": 3,
+    "CutSquare": true,
+    "CutIncrementMeasurement": 12.0,
+    "CutGapMeasurement": 6.0,
+    "CutGapMethod": 0,
+    "AllowTileRotation": false,
+    "ExtraWasteAmount": 0.1,
+    "ExtraWasteType": 0,
+    "UseAsAddonOnly": false,
+    "DefaultUnitPrice": 89.99,
+    "DefaultUnitPriceCode": "RETAIL",
+    "UnitCost": 45.50,
+    "SaleUnits": "SF",
+    "IsTaxable": true,
+    "QuantityPerBox": 0.0,
+    "ProductColorOptions": [
+      {
+        "Id": 1,
+        "ColorName": "Warm Beige",
+        "ColorNumber": "WB-001",
+        "SKU": "VP-2024-001-WB"
+      },
+      {
+        "Id": 2,
+        "ColorName": "Soft Gray",
+        "ColorNumber": "SG-002",
+        "SKU": "VP-2024-001-SG"
+      },
+      {
+        "Id": 3,
+        "ColorName": "Cream White",
+        "ColorNumber": "CW-003",
+        "SKU": "VP-2024-001-CW"
+      }
+    ],
+    "PriceOptions": [
+      {
+        "PriceCode": "RETAIL",
+        "PriceAmount": 89.99
+      },
+      {
+        "PriceCode": "WHOLESALE",
+        "PriceAmount": 67.49
+      },
+      {
+        "PriceCode": "CONTRACTOR",
+        "PriceAmount": 72.00
+      }
+    ]
+  },
+  {
+    "Id": "PRD-0002",
+    "ProductType": "RollCarpet",
+    "Notes": "Metric, CutGapMethod: Length, Extra waste: 5m len",
+    "MeasurementsAreInches": false,
+    "StyleName": "Lost Dreams",
+    "StyleNumber": "VP-2024-002",
+    "Supplier": "Premium Floor Coverings Inc.",
+    "LabelWidthMeasurement": 3.0,
+    "UsableWidthMeasurement": 3.0,
+    "PatternWidthMeasurement": 1.0,
+    "PatternLengthMeasurement": 1.0,
+    "PatternDropPercent": 0.5,
+    "MaximumTSeams": 0,
+    "CutSquare": false,
+    "CutIncrementMeasurement": 0.5,
+    "CutGapMeasurement": 0.5,
+    "CutGapMethod": 1,
+    "AllowTileRotation": false,
+    "ExtraWasteAmount": 5.0,
+    "ExtraWasteType": 2,
+    "UseAsAddonOnly": false,
+    "DefaultUnitPrice": 79.99,
+    "DefaultUnitPriceCode": "WHOLESALE",
+    "UnitCost": 45.50,
+    "SaleUnits": "SM",
+    "IsTaxable": true,
+    "QuantityPerBox": 0.0,
+    "ProductColorOptions": [
+      {
+        "Id": 1,
+        "ColorName": "Faded Glory",
+        "ColorNumber": "WB-011",
+        "SKU": "VP-2024-002-WB"
+      },
+      {
+        "Id": 2,
+        "ColorName": "June Gloom",
+        "ColorNumber": "SG-012",
+        "SKU": "VP-2024-002-SG"
+      },
+      {
+        "Id": 3,
+        "ColorName": "Flaking paint",
+        "ColorNumber": "CW-013",
+        "SKU": "VP-2024-002-CW"
+      }
+    ],
+    "PriceOptions": [
+      {
+        "PriceCode": "RETAIL",
+        "PriceAmount": 99.99
+      },
+      {
+        "PriceCode": "WHOLESALE",
+        "PriceAmount": 79.99
+      },
+      {
+        "PriceCode": "CONTRACTOR",
+        "PriceAmount": 72.00
+      }
+    ]
+  }
+
+]

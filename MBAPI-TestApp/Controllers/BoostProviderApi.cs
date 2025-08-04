@@ -16,5 +16,20 @@ namespace MBAPI_TestApp.Controllers
             var data = new DataAccess();
             return data.CustomerSearch(query.searchString);
         }
+
+        [HttpPost("product/search")]
+        public List<Product> ProductSearch(ProductQuery query)
+        {
+            var data = new DataAccess();
+            return data.ProductSearch(query);
+        }
+
+        [HttpPost("product/getmultiple")]
+        public List<Product> GetProducts(List<string> keys)
+        {
+            var data = new DataAccess();
+            return data.GetProducts(keys);
+        }
+
     }
 }
