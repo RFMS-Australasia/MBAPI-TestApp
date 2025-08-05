@@ -124,6 +124,105 @@
         "PriceAmount": 72.00
       }
     ]
+  },
+  {
+    "Id": "PRD-0004",
+    "ProductType": "TileCeramic",
+    "Notes": "Metric, Tile",
+    "MeasurementsAreInches": false,
+    "StyleName": "Joyful Times",
+    "StyleNumber": "TS-2023-010",
+    "Supplier": "Premium Floor Coverings Inc.",
+    "PatternWidthMeasurement": 1.0,
+    "PatternLengthMeasurement": 1.0,
+    "AllowTileRotation": true,
+    "ExtraWasteAmount": 0.1,
+    "ExtraWasteType": 0,
+    "DefaultUnitPrice": 22.99,
+    "UnitCost": 10.50,
+    "SaleUnits": "SM",
+    "IsTaxable": true,
+    "QuantityPerBox": 30.0,
+    "ProductColorOptions": [
+      {
+        "Id": 1,
+        "ColorName": "Foster",
+        "ColorNumber": "WS-111",
+        "SKU": "TS-2023-111-WS"
+      },
+      {
+        "Id": 2,
+        "ColorName": "Fields",
+        "ColorNumber": "WS-122",
+        "SKU": "TS-2023-122-WS"
+      },
+      {
+        "Id": 3,
+        "ColorName": "Clouds",
+        "ColorNumber": "WS-300",
+        "SKU": "WS-2023-300-WS"
+      }
+    ]
+  },
+  {
+    "Id": "PRD-0005",
+    "ProductType": "ItemService",
+    "MeasurementsAreInches": false,
+    "StyleName": "Installation Fee",
+    "StyleNumber": "INSTALL-1",
+    "DefaultUnitPrice": 19.99,
+    "SaleUnits": "SM",
+    "IsTaxable": true
+  },
+  {
+    "Id": "PRD-0006",
+    "ProductType": "ItemMisc",
+    "StyleName": "Metal Transition",
+    "StyleNumber": "TT-100",
+    "Supplier": "Premium Floor Coverings Inc.",
+    "UseAsAddonOnly": true,
+    "DefaultUnitPrice": 9.99,
+    "UnitCost": 4.49,
+    "SaleUnits": "LM",
+    "IsTaxable": true,
+    "QuantityPerBox": 20.0
+  },
+  {
+    "Id": "PRD-0007",
+    "ProductType": "RollCarpet",
+    "Notes": "Metric, CutGapMethod: Length, Extra waste: 15 SM",
+    "MeasurementsAreInches": false,
+    "StyleName": "Wistful Tides",
+    "StyleNumber": "VP-2024-022",
+    "Supplier": "Premium Floor Coverings Inc.",
+    "LabelWidthMeasurement": 3.0,
+    "UsableWidthMeasurement": 3.0,
+    "MaximumTSeams": 3,
+    "CutSquare": true,
+    "CutIncrementMeasurement": 0.5,
+    "CutGapMeasurement": 0.5,
+    "CutGapMethod": 1,
+    "ExtraWasteAmount": 15.0,
+    "ExtraWasteType": 1,
+    "DefaultUnitPrice": 79.99,
+    "UnitCost": 45.50,
+    "SaleUnits": "SM",
+    "IsTaxable": true,
+    "QuantityPerBox": 0.0,
+    "ProductColorOptions": [
+      {
+        "Id": 1,
+        "ColorName": "Willows",
+        "ColorNumber": "WB-022",
+        "SKU": "VP-2024-022-WB"
+      },
+      {
+        "Id": 2,
+        "ColorName": "Sea Glass",
+        "ColorNumber": "SG-022",
+        "SKU": "VP-2024-022-SG"
+      }
+    ]
   }
 
 ]
