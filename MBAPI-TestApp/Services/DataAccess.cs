@@ -8,6 +8,7 @@ namespace MBAPI_TestApp.Services
     {
         private static List<Customer> _customers = new List<Customer>();
         private static List<Product> _products = new List<Product>();
+        private static Estimate? _estimate = null;
 
         public DataAccess() { 
             if (_customers.Count == 0) {
@@ -61,6 +62,20 @@ namespace MBAPI_TestApp.Services
         internal List<Product> GetProducts(List<string> keys)
         {
             return _products.Where(p => keys.Contains(p.Id)).ToList();
+        }
+
+        internal EstimateSaveResult SaveEstimate(Estimate estimate)
+        {
+            _estimate = estimate;
+            return new EstimateSaveResult() {
+                IsSuccess = true,
+                EstimateId = $"Q{(Guid.NewGuid().ToString("N").Substring(0, 7))}",
+                Message = "OK"
+            };
+        }
+
+        internal Estimate? GetLastEstimateReceived() {
+            return _estimate;
         }
     }
 }
