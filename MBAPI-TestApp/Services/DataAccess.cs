@@ -77,5 +77,22 @@ namespace MBAPI_TestApp.Services
         internal Estimate? GetLastEstimateReceived() {
             return _estimate;
         }
+
+        internal Customer? CreateCustomer(Customer record)
+        {
+            _customers.Add(record);
+            record.Id = _customers.Count + 1000;
+            return record;
+        }
+
+        internal Customer? SaveCustomer(Customer record)
+        {
+            var index = _customers.FindIndex(c => c.Id == record.Id);
+            if (index >= 0) { 
+                _customers[index] = record;
+                return record;
+            }
+            return null;
+        }
     }
 }

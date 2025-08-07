@@ -2,6 +2,7 @@
 using MeasureBoostApi.Interface;
 using MeasureBoostApi.Model;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MBAPI_TestApp.Controllers
@@ -29,6 +30,7 @@ namespace MBAPI_TestApp.Controllers
                 return eventType.ToString() switch
                 {
                     "customer.search" => HandleCustomerSearch(rawBody),
+                    "customer.save" => HandleCustomerSave(rawBody),
                     "product.search" => HandleProductSearch(rawBody),
                     "product.get" => HandleProductGetMultiple(rawBody),
                     "estimate.save" => HandleEstimateSave(rawBody),
@@ -84,6 +86,29 @@ namespace MBAPI_TestApp.Controllers
             var data = new DataAccess();
             var result = data.SaveEstimate(estimate);
             return Ok(result);
+        }
+
+        private IActionResult HandleCustomerSave(string rawBody)
+        {
+            var customer = System.Text.Json.JsonSerializer.Deserialize<Customer>(rawBody);
+            if (customer == null)
+                return BadRequest("Invalid customer");
+
+            var data = new DataAccess();
+
+            if (customer.Id == 0) {
+                var result = data.CreateCustomer(customer);
+                if (result == null)
+                    return BadRequest("Unable to create customer");
+                else
+                    return Ok(result);
+            } else {
+                var result = data.SaveCustomer(customer);
+                if (result == null)
+                    return BadRequest("Unable to update customer");
+                else
+                    return Ok(result);
+            }
         }
 
         // Health check endpoint (bypassed by middleware)
