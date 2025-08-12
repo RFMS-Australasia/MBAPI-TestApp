@@ -29,6 +29,7 @@ namespace MBAPI_TestApp.Controllers
                 // Route to appropriate handler based on event type
                 return eventType.ToString() switch
                 {
+                    "verify" => HandleVerify(rawBody),
                     "customer.search" => HandleCustomerSearch(rawBody),
                     "customer.save" => HandleCustomerSave(rawBody),
                     "product.search" => HandleProductSearch(rawBody),
@@ -42,6 +43,15 @@ namespace MBAPI_TestApp.Controllers
                 // Log the exception
                 return StatusCode(500, "Internal server error");
             }
+        }
+
+        private IActionResult HandleVerify(string rawBody)
+        {
+            var result = new VerifyResult() {
+                IsSuccess = true,
+                Message = "OK"
+            };
+            return Ok(result);
         }
 
         private IActionResult HandleCustomerSearch(string rawBody)
