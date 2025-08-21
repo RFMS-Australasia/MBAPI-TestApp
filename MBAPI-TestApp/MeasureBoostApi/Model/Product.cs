@@ -25,7 +25,6 @@
 
         public int MaximumTSeams { get; set; } = 0;
         public bool CutSquare { get; set; } = false;
-        public double CutIncrementMeasurement { get; set; } = 0;
         public double CutGapMeasurement { get; set; } = 0;
         public int CutGapMethod { get; set; } = 0;                       //  0=Guillotine, 1=Length, 2=All sides
         public bool AllowTileRotation { get; set; } = false;
@@ -34,8 +33,7 @@
         public int ExtraWasteType { get; set; }                          //  0=Percentage, 1=Manual, 2=Length
         public bool UseAsAddonOnly { get; set; }
 
-        public decimal DefaultUnitPrice { get; set; }
-        public string? DefaultUnitPriceCode { get; set; }
+        public decimal UnitPrice { get; set; }
         public decimal UnitCost { get; set; }
 
         public string SaleUnits { get; set; } = "EA";
@@ -43,8 +41,6 @@
         public double QuantityPerBox { get; set; }
 
         public List<ProductColorOption> ProductColorOptions { get; set; } = new List<ProductColorOption>();
-        public List<PriceOption> PriceOptions { get; set; } = new List<PriceOption>();
-
     }
 
     public class ProductColorOption {
@@ -54,8 +50,4 @@
         public string SKU { get; set; } = "";
     }
 
-    public class PriceOption {
-        public string PriceCode { get; set; } = "";
-        public decimal PriceAmount { get; set; }
-    }
 }

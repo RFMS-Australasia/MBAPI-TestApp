@@ -14,15 +14,13 @@
     "PatternDropPercent": 0,
     "MaximumTSeams": 3,
     "CutSquare": true,
-    "CutIncrementMeasurement": 12.0,
     "CutGapMeasurement": 6.0,
     "CutGapMethod": 0,
     "AllowTileRotation": false,
     "ExtraWasteAmount": 0.1,
     "ExtraWasteType": 0,
     "UseAsAddonOnly": false,
-    "DefaultUnitPrice": 89.99,
-    "DefaultUnitPriceCode": "RETAIL",
+    "UnitPrice": 89.99,
     "UnitCost": 45.50,
     "SaleUnits": "SF",
     "IsTaxable": true,
@@ -46,20 +44,6 @@
         "ColorNumber": "CW-003",
         "SKU": "VP-2024-001-CW"
       }
-    ],
-    "PriceOptions": [
-      {
-        "PriceCode": "RETAIL",
-        "PriceAmount": 89.99
-      },
-      {
-        "PriceCode": "WHOLESALE",
-        "PriceAmount": 67.49
-      },
-      {
-        "PriceCode": "CONTRACTOR",
-        "PriceAmount": 72.00
-      }
     ]
   },
   {
@@ -77,15 +61,13 @@
     "PatternDropPercent": 0.5,
     "MaximumTSeams": 0,
     "CutSquare": false,
-    "CutIncrementMeasurement": 0.5,
     "CutGapMeasurement": 0.5,
     "CutGapMethod": 1,
     "AllowTileRotation": false,
     "ExtraWasteAmount": 5.0,
     "ExtraWasteType": 2,
     "UseAsAddonOnly": false,
-    "DefaultUnitPrice": 79.99,
-    "DefaultUnitPriceCode": "WHOLESALE",
+    "UnitPrice": 79.99,
     "UnitCost": 45.50,
     "SaleUnits": "SM",
     "IsTaxable": true,
@@ -109,20 +91,6 @@
         "ColorNumber": "CW-013",
         "SKU": "VP-2024-002-CW"
       }
-    ],
-    "PriceOptions": [
-      {
-        "PriceCode": "RETAIL",
-        "PriceAmount": 99.99
-      },
-      {
-        "PriceCode": "WHOLESALE",
-        "PriceAmount": 79.99
-      },
-      {
-        "PriceCode": "CONTRACTOR",
-        "PriceAmount": 72.00
-      }
     ]
   },
   {
@@ -138,7 +106,7 @@
     "AllowTileRotation": true,
     "ExtraWasteAmount": 0.1,
     "ExtraWasteType": 0,
-    "DefaultUnitPrice": 22.99,
+    "UnitPrice": 22.99,
     "UnitCost": 10.50,
     "SaleUnits": "SM",
     "IsTaxable": true,
@@ -170,7 +138,7 @@
     "MeasurementsAreInches": false,
     "StyleName": "Installation Fee",
     "StyleNumber": "INSTALL-1",
-    "DefaultUnitPrice": 19.99,
+    "UnitPrice": 19.99,
     "SaleUnits": "SM",
     "IsTaxable": true
   },
@@ -181,7 +149,7 @@
     "StyleNumber": "TT-100",
     "Supplier": "Premium Floor Coverings Inc.",
     "UseAsAddonOnly": true,
-    "DefaultUnitPrice": 9.99,
+    "UnitPrice": 9.99,
     "UnitCost": 4.49,
     "SaleUnits": "LM",
     "IsTaxable": true,
@@ -199,12 +167,11 @@
     "UsableWidthMeasurement": 3.0,
     "MaximumTSeams": 3,
     "CutSquare": true,
-    "CutIncrementMeasurement": 0.5,
     "CutGapMeasurement": 0.5,
     "CutGapMethod": 1,
     "ExtraWasteAmount": 15.0,
     "ExtraWasteType": 1,
-    "DefaultUnitPrice": 79.99,
+    "UnitPrice": 79.99,
     "UnitCost": 45.50,
     "SaleUnits": "SM",
     "IsTaxable": true,
