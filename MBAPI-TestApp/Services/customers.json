@@ -4,9 +4,9 @@
     "SoldTo": {
       "FirstName": "Oliver",
       "LastName": "Smith",
-      "BusinessName": "Smith Mining Co.",
+      "BusinessName": "",
       "AddressLine1": "12 Kingsway",
-      "AddressLine2": "Suite 301",
+      "AddressLine2": "",
       "City": "Sydney",
       "State": "NSW",
       "PostalCode": "2000"
@@ -14,7 +14,7 @@
     "ShipTo": {
       "FirstName": "Oliver",
       "LastName": "Smith",
-      "BusinessName": "Smith Mining Co.",
+      "BusinessName": "",
       "AddressLine1": "45 George Street",
       "AddressLine2": "",
       "City": "Parramatta",
@@ -24,7 +24,8 @@
     "PhoneNumbers": [ "+61 2 9012 3456" ],
     "EmailAddresses": [ "oliver.smith@smithmining.au" ],
     "Salespeople": [ "Lauren Jones" ],
-    "JobNumber": "M23-211"
+    "JobNumber": "M23-211",
+    "Source": "Pronto Quote M23-211"
   },
   {
     "Id": 101,
