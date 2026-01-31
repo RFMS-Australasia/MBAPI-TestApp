@@ -47,5 +47,6 @@
         public string Title { get; set; } = "";
         public string DownloadUrl { get; set; } = "";
         public int LineNumber { get; set; } = 0;
+        public string AttachmentType { get; set; } = "";
     }
 }

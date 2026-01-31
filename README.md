@@ -2,7 +2,7 @@
 
 Test application for the Measure Boost Webhooks API
 
-(C) Copyright 2025 RFMS Australasia Limited
+(C) Copyright 2026 RFMS Australasia Limited
 
 ## Background
 
@@ -45,3 +45,7 @@ A simple test library is included in this solution. It allows you to run and tes
 ## More information
 
 See documentation here: https://public.3.basecamp.com/p/uwfsCpMLLD3RnXqFFKKCsHQd
+
+## Change log
+
+2026-01-31 - Added AttachmentType to photo object
