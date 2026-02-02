@@ -5,7 +5,7 @@
         public Project Project { get; set; } = new Project();
         public Customer Customer { get; set; } = new Customer();        
         public List<EstimateLine> Lines { get; set; } = [];
-        public List<Photo> Photos { get; set; } = [];
+        public List<Attachment> Attachments { get; set; } = [];
     }
 
     public class EstimateLine {
@@ -43,7 +43,7 @@
         public string QuoteNumber { get; set; } = "";
     }
 
-    public class Photo {
+    public class Attachment {
         public string Title { get; set; } = "";
         public string DownloadUrl { get; set; } = "";
         public int LineNumber { get; set; } = 0;
